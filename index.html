@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse the Complete Science archive, download all 20 archive parts, and read the accompanying research papers." />
+    <meta name="theme-color" content="#08111f" />
+    <title>Complete Science Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Complete Science Archive home">
+        <span class="brand-mark" aria-hidden="true">CS</span>
+        <span>Complete Science</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#papers">Research papers</a>
+        <a href="#archive">Archive parts</a>
+        <a href="#instructions">Instructions</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="eyebrow"><span></span> Open research collection</div>
+        <h1 id="page-title">Ideas at the edge of<br /><em>science and meaning.</em></h1>
+        <p class="intro-copy">Read the published papers online, explore the supporting documents, or download the complete archive in 20 verified parts.</p>
+        <div class="intro-actions">
+          <a class="button button-primary" href="#papers">Read the papers <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#archive">View archive parts</a>
+        </div>
+        <dl class="metrics" aria-label="Collection summary">
+          <div><dt>20</dt><dd>Archive parts</dd></div>
+          <div><dt>4</dt><dd>Paper editions</dd></div>
+          <div><dt>1</dt><dd>Source document</dd></div>
+        </dl>
+      </section>
+
+      <section class="section" id="papers" aria-labelledby="papers-title">
+        <div class="section-heading">
+          <div><span class="section-index">01</span><h2 id="papers-title">Research papers</h2></div>
+          <p>Open a paper in the built-in reader or download the original file.</p>
+        </div>
+        <div class="paper-grid" id="paperGrid"></div>
+      </section>
+
+      <section class="section archive-section" id="archive" aria-labelledby="archive-title">
+        <div class="section-heading">
+          <div><span class="section-index">02</span><h2 id="archive-title">Complete archive</h2></div>
+          <p>All 20 parts are required. Download them into the same folder before reconstructing the ZIP.</p>
+        </div>
+
+        <div class="archive-toolbar">
+          <div>
+            <span class="status-label">Download checklist</span>
+            <strong><span id="downloadedCount">0</span> of 20 marked complete</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true"><span id="progressBar"></span></div>
+          <button class="text-button" id="resetProgress" type="button">Reset</button>
+        </div>
+        <div class="parts-grid" id="partsGrid"></div>
+      </section>
+
+      <section class="section instructions" id="instructions" aria-labelledby="instructions-title">
+        <div class="section-heading">
+          <div><span class="section-index">03</span><h2 id="instructions-title">Rebuild the archive</h2></div>
+          <p>The files are segments of one ZIP—not 20 independent ZIP archives.</p>
+        </div>
+        <div class="instruction-grid">
+          <article class="instruction-card">
+            <div class="card-kicker">Windows · PowerShell</div>
+            <h3>Join the numbered parts</h3>
+            <pre><code id="windowsCommand">$out = [IO.File]::Create("completescience.zip")
+1..20 | ForEach-Object {
+  $part = "completescience.part{0:D2}.zip" -f $_
+  $bytes = [IO.File]::ReadAllBytes($part)
+  $out.Write($bytes, 0, $bytes.Length)
+}
+$out.Close()</code></pre>
+            <button class="copy-button" data-copy="windowsCommand" type="button">Copy command</button>
+          </article>
+          <article class="instruction-card">
+            <div class="card-kicker">Linux / macOS</div>
+            <h3>Join, then extract</h3>
+            <pre><code id="unixCommand">cat completescience.part{01..20}.zip &gt; completescience.zip
+unzip completescience.zip</code></pre>
+            <button class="copy-button" data-copy="unixCommand" type="button">Copy command</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Complete Science Archive</span>
+      <span>Research collection · 2026</span>
+    </footer>
+
+    <dialog id="readerDialog" aria-labelledby="readerTitle">
+      <div class="reader-bar">
+        <div><span class="card-kicker">Document reader</span><h2 id="readerTitle">Paper</h2></div>
+        <div class="reader-actions">
+          <a id="readerDownload" class="button button-secondary" download>Download</a>
+          <button id="closeReader" class="icon-button" aria-label="Close document reader" type="button">×</button>
+        </div>
+      </div>
+      <iframe id="readerFrame" title="PDF document reader"></iframe>
+    </dialog>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
