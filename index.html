@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Browse the Complete Science archive, download all 20 archive parts, and read the accompanying research papers." />
+    <meta name="description" content="Browse the updated Complete Science research archive, read every available paper, download editable source documents, and retrieve the complete collection in 20 archive parts." />
     <meta name="theme-color" content="#08111f" />
     <title>Complete Science Archive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,30 +28,38 @@
       <section class="intro" aria-labelledby="page-title">
         <div class="eyebrow"><span></span> Open research collection</div>
         <h1 id="page-title">Ideas at the edge of<br /><em>science and meaning.</em></h1>
-        <p class="intro-copy">Read the published papers online, explore the supporting documents, or download the complete archive in 20 verified parts.</p>
+        <p class="intro-copy">Explore the updated research collection, read every available PDF in the built-in viewer, download editable source documents, or retrieve the complete archive in exactly 20 numbered parts.</p>
         <div class="intro-actions">
           <a class="button button-primary" href="#papers">Read the papers <span aria-hidden="true">↗</span></a>
           <a class="button button-secondary" href="#archive">View archive parts</a>
         </div>
         <dl class="metrics" aria-label="Collection summary">
           <div><dt>20</dt><dd>Archive parts</dd></div>
-          <div><dt>4</dt><dd>Paper editions</dd></div>
-          <div><dt>1</dt><dd>Source document</dd></div>
+          <div><dt id="projectMetric">4</dt><dd>Research projects</dd></div>
+          <div><dt id="documentMetric">9</dt><dd>Published files</dd></div>
         </dl>
       </section>
 
       <section class="section" id="papers" aria-labelledby="papers-title">
         <div class="section-heading">
           <div><span class="section-index">01</span><h2 id="papers-title">Research papers</h2></div>
-          <p>Open a paper in the built-in reader or download the original file.</p>
+          <p>Open PDFs in the built-in reader, download original files, or filter the library by research project.</p>
+        </div>
+        <div class="library-toolbar">
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="paperSearch" type="search" placeholder="Search papers, topics or formats…" autocomplete="off" />
+          </label>
+          <div class="filter-row" id="paperFilters" aria-label="Filter papers by project"></div>
         </div>
         <div class="paper-grid" id="paperGrid"></div>
+        <p class="empty-state" id="paperEmpty" hidden>No documents match this filter.</p>
       </section>
 
       <section class="section archive-section" id="archive" aria-labelledby="archive-title">
         <div class="section-heading">
           <div><span class="section-index">02</span><h2 id="archive-title">Complete archive</h2></div>
-          <p>All 20 parts are required. Download them into the same folder before reconstructing the ZIP.</p>
+          <p>The archive remains exactly 20 sequential parts. Download all of them into the same folder before reconstructing the ZIP.</p>
         </div>
 
         <div class="archive-toolbar">
