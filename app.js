@@ -1,5 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
     const papers = [
+        // ==================================================
+        // ND SELECTIVE CAUSAL-LOOP HYPOTHESIS
+        // ==================================================
+
+        {
+            project: "ND-SCLH",
+            title: "The ND Selective Causal-Loop Hypothesis",
+            note: "Speculative framework for higher-dimensional influence, technological innovation, and self-consistent information loops",
+            type: "PDF",
+            details: "7 pages · Formal speculative research report",
+            file: "ND_Select_Causal_Loop_Hypothesis_Report(1).pdf",
+            tags: [
+                "ND-SCLH",
+                "causal loop",
+                "higher dimensions",
+                "retrocausality",
+                "technological innovation",
+                "future intelligence",
+                "self-consistency",
+                "speculative physics",
+            ],
+        },
+
+        {
+            project: "ND-SCLH",
+            title: "The ND Selective Causal-Loop Hypothesis",
+            note: "Editable source document · Formal speculative research report",
+            type: "DOCX",
+            details: "Source",
+            file: "ND_Select_Causal_Loop_Hypothesis_Report(1).docx",
+            tags: [
+                "ND-SCLH",
+                "causal loop",
+                "higher dimensions",
+                "retrocausality",
+                "technological innovation",
+                "future intelligence",
+                "self-consistency",
+                "speculative physics",
+            ],
+        },
+
+        // ==================================================
+        // ZERO-INFLATION IMPACT ECONOMY
+        // ==================================================
+
         {
             project: "Zero-Inflation Impact Economy",
             title: "A Zero-Inflation Impact Economy",
@@ -7,8 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "PDF",
             details: "Research paper",
             file: "zero_inflation_impact_economy_working_paper.pdf",
-            tags: ["economics", "inflation", "monetary policy", "impact economy"],
+            tags: [
+                "economics",
+                "inflation",
+                "monetary policy",
+                "impact economy",
+            ],
         },
+
         {
             project: "Zero-Inflation Impact Economy",
             title: "A Zero-Inflation Impact Economy",
@@ -16,8 +68,18 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "DOCX",
             details: "Source",
             file: "zero_inflation_impact_economy_working_paper.docx",
-            tags: ["economics", "inflation", "monetary policy", "impact economy"],
+            tags: [
+                "economics",
+                "inflation",
+                "monetary policy",
+                "impact economy",
+            ],
         },
+
+        // ==================================================
+        // HEMIH
+        // ==================================================
+
         {
             project: "HEMIH",
             title: "HEMIH Speculative Research Paper",
@@ -25,8 +87,13 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "PDF",
             details: "Research paper",
             file: "HEMIH_Speculative_Research_Paper.pdf",
-            tags: ["HEMIH", "speculative research", "theoretical model"],
+            tags: [
+                "HEMIH",
+                "speculative research",
+                "theoretical model",
+            ],
         },
+
         {
             project: "HEMIH",
             title: "HEMIH Speculative Research Paper",
@@ -34,8 +101,17 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "DOCX",
             details: "Source",
             file: "HEMIH_Speculative_Research_Paper.docx",
-            tags: ["HEMIH", "speculative research", "theoretical model"],
+            tags: [
+                "HEMIH",
+                "speculative research",
+                "theoretical model",
+            ],
         },
+
+        // ==================================================
+        // GSMC
+        // ==================================================
+
         {
             project: "GSMC",
             title: "GSMC Science Publication 2026",
@@ -43,8 +119,14 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "PDF",
             details: "11 pages",
             file: "GSMC_Science_Publication_2026_v1.1.pdf",
-            tags: ["GSMC", "science", "cosmology", "2026"],
+            tags: [
+                "GSMC",
+                "science",
+                "cosmology",
+                "2026",
+            ],
         },
+
         {
             project: "GSMC",
             title: "GSMC Science Publication 2026",
@@ -52,8 +134,14 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "PDF",
             details: "11 pages",
             file: "GSMC_Science_Publication_2026_v1.1 (1).pdf",
-            tags: ["GSMC", "science", "cosmology", "2026"],
+            tags: [
+                "GSMC",
+                "science",
+                "cosmology",
+                "2026",
+            ],
         },
+
         {
             project: "GSMC",
             title: "GSMC Science Publication 2026",
@@ -61,8 +149,18 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "DOCX",
             details: "Source",
             file: "GSMC_Science_Publication_2026_v1.1(1).docx",
-            tags: ["GSMC", "science", "cosmology", "2026"],
+            tags: [
+                "GSMC",
+                "science",
+                "cosmology",
+                "2026",
+            ],
         },
+
+        // ==================================================
+        // SCIENCE & RELIGION
+        // ==================================================
+
         {
             project: "Science & Religion",
             title: "Science, Religion & The Truth",
@@ -70,8 +168,14 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "PDF",
             details: "3 pages",
             file: "Science_Religion_TheTruth.pdf",
-            tags: ["science", "religion", "philosophy", "truth"],
+            tags: [
+                "science",
+                "religion",
+                "philosophy",
+                "truth",
+            ],
         },
+
         {
             project: "Science & Religion",
             title: "Science, Religion & The Truth",
@@ -79,14 +183,24 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "PDF",
             details: "3 pages",
             file: "Science_Religion_TheTruth (1).pdf",
-            tags: ["science", "religion", "philosophy", "truth"],
+            tags: [
+                "science",
+                "religion",
+                "philosophy",
+                "truth",
+            ],
         },
     ];
+
+    // ==================================================
+    // ELEMENTS
+    // ==================================================
 
     const paperGrid = document.querySelector("#paperGrid");
     const paperSearch = document.querySelector("#paperSearch");
     const paperFilters = document.querySelector("#paperFilters");
     const paperEmpty = document.querySelector("#paperEmpty");
+
     const projectMetric = document.querySelector("#projectMetric");
     const documentMetric = document.querySelector("#documentMetric");
 
@@ -103,9 +217,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const toast = document.querySelector("#toast");
 
-    // --------------------------------------------------
-    // RESEARCH LIBRARY
-    // --------------------------------------------------
+    // ==================================================
+    // RESEARCH PROJECTS
+    // ==================================================
 
     const projects = [
         ...new Set(
@@ -123,6 +237,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (documentMetric) {
         documentMetric.textContent = papers.length;
     }
+
+    // ==================================================
+    // SEARCH MATCHING
+    // ==================================================
 
     function paperMatches(paper) {
         const projectMatch =
@@ -146,6 +264,10 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
+    // ==================================================
+    // PROJECT FILTER BUTTONS
+    // ==================================================
+
     function renderFilters() {
         if (!paperFilters) return;
 
@@ -156,11 +278,10 @@ document.addEventListener("DOMContentLoaded", () => {
             .map(
                 (project) => `
                     <button
-                        class="filter-chip ${
-                            activeProject === project
-                                ? "active"
-                                : ""
-                        }"
+                        class="filter-chip ${activeProject === project
+                        ? "active"
+                        : ""
+                    }"
                         type="button"
                         data-project="${project}"
                     >
@@ -171,14 +292,20 @@ document.addEventListener("DOMContentLoaded", () => {
             .join("");
     }
 
+    // ==================================================
+    // PAPER CARDS
+    // ==================================================
+
     function renderPapers() {
         if (!paperGrid) return;
 
-        const filtered = papers.filter(paperMatches);
+        const filtered =
+            papers.filter(paperMatches);
 
         paperGrid.innerHTML = filtered
             .map((paper) => {
-                const index = papers.indexOf(paper);
+                const index =
+                    papers.indexOf(paper);
 
                 return `
                     <article class="paper-card">
@@ -216,9 +343,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         <div class="paper-actions">
 
-                            ${
-                                paper.type === "PDF"
-                                    ? `
+                            ${paper.type === "PDF"
+                        ? `
                                         <button
                                             class="button button-primary read-paper"
                                             data-index="${index}"
@@ -230,8 +356,8 @@ document.addEventListener("DOMContentLoaded", () => {
                                             </span>
                                         </button>
                                     `
-                                    : ""
-                            }
+                        : ""
+                    }
 
                             <a
                                 class="button button-secondary"
@@ -254,9 +380,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // --------------------------------------------------
-    // PROJECT FILTERS
-    // --------------------------------------------------
+    // ==================================================
+    // FILTER EVENTS
+    // ==================================================
 
     if (paperFilters) {
         paperFilters.addEventListener(
@@ -278,9 +404,9 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
-    // --------------------------------------------------
+    // ==================================================
     // SEARCH
-    // --------------------------------------------------
+    // ==================================================
 
     if (paperSearch) {
         paperSearch.addEventListener(
@@ -296,9 +422,9 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
-    // --------------------------------------------------
+    // ==================================================
     // 20-PART ARCHIVE
-    // --------------------------------------------------
+    // ==================================================
 
     let savedParts = [];
 
@@ -335,11 +461,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     return `
                         <article
-                            class="part-card ${
-                                isComplete
-                                    ? "complete"
-                                    : ""
-                            }"
+                            class="part-card ${isComplete
+                            ? "complete"
+                            : ""
+                        }"
                         >
 
                             <div>
@@ -361,11 +486,10 @@ document.addEventListener("DOMContentLoaded", () => {
                                 data-part="${number}"
                                 aria-label="Download archive part ${number}"
                             >
-                                ${
-                                    isComplete
-                                        ? "✓"
-                                        : "↓"
-                                }
+                                ${isComplete
+                            ? "✓"
+                            : "↓"
+                        }
                             </a>
 
                         </article>
@@ -384,9 +508,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // --------------------------------------------------
-    // ARCHIVE DOWNLOAD TRACKING
-    // --------------------------------------------------
+    // ==================================================
+    // PART DOWNLOAD TRACKING
+    // ==================================================
 
     if (partsGrid) {
         partsGrid.addEventListener(
@@ -418,9 +542,9 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
-    // --------------------------------------------------
-    // RESET ARCHIVE PROGRESS
-    // --------------------------------------------------
+    // ==================================================
+    // RESET DOWNLOAD PROGRESS
+    // ==================================================
 
     if (resetProgress) {
         resetProgress.addEventListener(
@@ -441,9 +565,9 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
-    // --------------------------------------------------
+    // ==================================================
     // PDF READER
-    // --------------------------------------------------
+    // ==================================================
 
     document.addEventListener(
         "click",
@@ -463,9 +587,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const selectedPaper =
                 papers[
-                    Number(
-                        readButton.dataset.index
-                    )
+                Number(
+                    readButton.dataset.index
+                )
                 ];
 
             if (!selectedPaper) return;
@@ -501,9 +625,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     );
 
-    // --------------------------------------------------
+    // ==================================================
     // CLOSE PDF READER
-    // --------------------------------------------------
+    // ==================================================
 
     function closeDocumentReader() {
         if (!readerDialog) return;
@@ -537,9 +661,9 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
-    // --------------------------------------------------
-    // TOAST NOTIFICATIONS
-    // --------------------------------------------------
+    // ==================================================
+    // TOAST
+    // ==================================================
 
     let toastTimer;
 
@@ -564,9 +688,9 @@ document.addEventListener("DOMContentLoaded", () => {
             );
     }
 
-    // --------------------------------------------------
-    // COPY REBUILD COMMANDS
-    // --------------------------------------------------
+    // ==================================================
+    // COPY COMMAND BUTTONS
+    // ==================================================
 
     document
         .querySelectorAll("[data-copy]")
@@ -605,9 +729,9 @@ document.addEventListener("DOMContentLoaded", () => {
             );
         });
 
-    // --------------------------------------------------
-    // INITIAL RENDER
-    // --------------------------------------------------
+    // ==================================================
+    // INITIAL LOAD
+    // ==================================================
 
     renderFilters();
     renderPapers();
