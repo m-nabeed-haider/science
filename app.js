@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
             note: "Speculative framework for higher-dimensional influence, technological innovation, and self-consistent information loops",
             type: "PDF",
             details: "7 pages · Formal speculative research report",
-            file: "ND_Select_Causal_Loop_Hypothesis_Report(1).pdf",
+            file: "ND_Select_Causal_Loop_Hypothesis_Report.pdf",
             tags: [
                 "ND-SCLH",
                 "causal loop",
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             note: "Editable source document · Formal speculative research report",
             type: "DOCX",
             details: "Source",
-            file: "ND_Select_Causal_Loop_Hypothesis_Report(1).docx",
+            file: "ND_Select_Causal_Loop_Hypothesis_Report.docx",
             tags: [
                 "ND-SCLH",
                 "causal loop",
