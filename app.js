@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "The Dimensional Speed-Limit Hypothesis",
             note: "One-time-dimension framework for dimension-dependent maximum speed",
             type: "PDF",
-            details: "5 pages · Speculative theoretical hypothesis / toy model",
+            details: "11 pages · Speculative theoretical hypothesis / toy model",
             file: "The_Dimensional_Speed_Limit_Hypothesis.pdf",
             tags: [
                 "dimensional speed limit",
