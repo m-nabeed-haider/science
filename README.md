@@ -2,13 +2,15 @@
 
 A public research archive containing theoretical, speculative, interdisciplinary, and computational work across physics, cosmology, economics, causality, technology, philosophy, and related areas.
 
-The repository provides a lightweight web interface for browsing individual research documents and downloading the complete research collection as a **20-part archive**.
+The repository provides a lightweight web interface for browsing the current collection of **7 research projects and 13 documents**, while also allowing the complete research collection to be downloaded as a **20-part archive**.
 
 > **Important:** Some works in this repository are explicitly speculative theoretical frameworks. They should not be interpreted as experimentally established scientific theories unless supporting evidence is provided within the relevant work.
 
 ---
 
 ## Research Collection
+
+The current frontend catalog contains **7 research projects** and **13 documents**.
 
 ### 1. The ND Selective Causal-Loop Hypothesis — ND-SCLH
 
@@ -34,12 +36,55 @@ The framework explicitly distinguishes mathematical speculation from empirical e
 
 **Files**
 
-* `ND_Select_Causal_Loop_Hypothesis_Report(1).pdf`
-* `ND_Select_Causal_Loop_Hypothesis_Report(1).docx`
+* `ND_Select_Causal_Loop_Hypothesis_Report.pdf`
+* `ND_Select_Causal_Loop_Hypothesis_Report.docx`
 
 ---
 
-### 2. Zero-Inflation Impact Economy — ZIIE
+### 2. Cognitive Potential Index — CPI
+
+**A Fixed-Base Cognitive Potential Index**
+
+A proposed psychometric framework for comparing norm-referenced cognitive scores across time using a bounded, Flynn-adjusted fixed-base model.
+
+The work focuses on:
+
+* Flynn-effect adjustment
+* historical IQ norm comparison
+* fixed-base cognitive scoring
+* bounded cognitive-potential scaling
+* secular trends in intelligence testing
+* cross-time interpretability of norm-referenced scores
+
+**Files**
+
+* `Cognitive_Potential_Index_Flynn_Effect_Model(1).pdf`
+
+---
+
+### 3. Dimensional Speed-Limit Hypothesis
+
+**The Dimensional Speed-Limit Hypothesis**
+
+A speculative theoretical hypothesis and toy model proposing a one-time-dimension framework in which the maximum attainable speed depends on the number of spatial dimensions.
+
+The work explores:
+
+* dimension-dependent speed limits
+* higher-dimensional kinematics
+* extra spatial dimensions
+* spacetime geometry
+* the speed of light as the 3D spatial limit
+* generalized dimensional constants
+* toy-model extensions beyond three spatial dimensions
+
+**Files**
+
+* `The_Dimensional_Speed_Limit_Hypothesis.pdf`
+
+---
+
+### 4. Zero-Inflation Impact Economy — ZIIE
 
 **A Zero-Inflation Impact Economy: A Rule-Based Framework for Long-Run Price-Level Stability and Contribution-Linked Distribution**
 
@@ -68,7 +113,7 @@ The proposal explores:
 
 ---
 
-### 3. HEMIH
+### 5. HEMIH
 
 A speculative theoretical research project exploring its proposed model and associated implications.
 
@@ -79,7 +124,7 @@ A speculative theoretical research project exploring its proposed model and asso
 
 ---
 
-### 4. GSMC
+### 6. GSMC
 
 **GSMC Science Publication 2026 — Version 1.1**
 
@@ -93,7 +138,7 @@ A theoretical research work covering the GSMC framework and its proposed scienti
 
 ---
 
-### 5. Science, Religion & The Truth
+### 7. Science, Religion & The Truth
 
 An interdisciplinary work examining questions involving science, religion, philosophy, and interpretations of truth.
 
@@ -115,8 +160,12 @@ science/
 ├── vercel.json
 ├── README.md
 │
-├── ND_Select_Causal_Loop_Hypothesis_Report(1).pdf
-├── ND_Select_Causal_Loop_Hypothesis_Report(1).docx
+├── ND_Select_Causal_Loop_Hypothesis_Report.pdf
+├── ND_Select_Causal_Loop_Hypothesis_Report.docx
+│
+├── Cognitive_Potential_Index_Flynn_Effect_Model(1).pdf
+│
+├── The_Dimensional_Speed_Limit_Hypothesis.pdf
 │
 ├── zero_inflation_impact_economy_working_paper.pdf
 ├── zero_inflation_impact_economy_working_paper.docx
@@ -264,7 +313,7 @@ Example:
 }
 ```
 
-The frontend automatically derives the number of research projects and documents from this collection.
+The frontend automatically derives the number of research projects and documents from this collection. With the current `papers` array, the interface reports **7 projects** and **13 documents**.
 
 ---
 
