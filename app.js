@@ -43,6 +43,52 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         // ==================================================
+        // COGNITIVE POTENTIAL INDEX (CPI)
+        // ==================================================
+
+        {
+            project: "Cognitive Potential Index",
+            title: "A Fixed-Base Cognitive Potential Index",
+            note: "Bounded, Flynn-adjusted framework for comparing norm-referenced cognitive scores across time",
+            type: "PDF",
+            details: "9 pages · Proposed psychometric index",
+            file: "Cognitive_Potential_Index_Flynn_Effect_Model(1).pdf",
+            tags: [
+                "CPI",
+                "Flynn effect",
+                "intelligence testing",
+                "IQ norms",
+                "cognitive potential",
+                "psychometrics",
+                "secular trends",
+                "fixed-base comparison",
+            ],
+        },
+
+        // ==================================================
+        // DIMENSIONAL SPEED-LIMIT HYPOTHESIS
+        // ==================================================
+
+        {
+            project: "Dimensional Speed-Limit Hypothesis",
+            title: "The Dimensional Speed-Limit Hypothesis",
+            note: "One-time-dimension framework for dimension-dependent maximum speed",
+            type: "PDF",
+            details: "5 pages · Speculative theoretical hypothesis / toy model",
+            file: "Dimensional_Speed_Limit_Hypothesis_Final_Readable (1).pdf",
+            tags: [
+                "dimensional speed limit",
+                "higher dimensions",
+                "extra dimensions",
+                "kinematics",
+                "spacetime",
+                "speed of light",
+                "toy model",
+                "speculative physics",
+            ],
+        },
+
+        // ==================================================
         // ZERO-INFLATION IMPACT ECONOMY
         // ==================================================
 
