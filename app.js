@@ -236,6 +236,59 @@ document.addEventListener("DOMContentLoaded", () => {
                 "truth",
             ],
         },
+        // ==================================================
+        // CYCLIC CAUSAL-STATE HYPOTHESIS (CCSH)
+        // ==================================================
+
+        {
+            project: "CCSH",
+            title: "The Cyclic Causal-State Hypothesis",
+            note: "Speculative Lorentz-scalar extension of relativistic causal kinematics",
+            type: "PDF",
+            details: "6 pages · Formal speculative theoretical framework",
+            file: "Cyclic_Causal_State_Hypothesis_Final.pdf",
+            tags: [
+                "CCSH",
+                "cyclic causal state",
+                "special relativity",
+                "causal structure",
+                "Lorentz scalar",
+                "Minkowski spacetime",
+                "timelike",
+                "spacelike",
+                "null boundary",
+                "four-momentum",
+                "modified dispersion",
+                "scalar field",
+                "causality",
+                "speculative physics",
+            ],
+        },
+
+        {
+            project: "CCSH",
+            title: "The Cyclic Causal-State Hypothesis",
+            note: "Editable source document · Speculative Lorentz-scalar extension of relativistic causal kinematics",
+            type: "DOCX",
+            details: "Source",
+            file: "Cyclic_Causal_State_Hypothesis_Final.docx",
+            tags: [
+                "CCSH",
+                "cyclic causal state",
+                "special relativity",
+                "causal structure",
+                "Lorentz scalar",
+                "Minkowski spacetime",
+                "timelike",
+                "spacelike",
+                "null boundary",
+                "four-momentum",
+                "modified dispersion",
+                "scalar field",
+                "causality",
+                "speculative physics",
+            ],
+        },
     ];
 
     // ==================================================
