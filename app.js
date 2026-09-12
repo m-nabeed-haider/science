@@ -265,30 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
         },
 
-        {
-            project: "CCSH",
-            title: "The Cyclic Causal-State Hypothesis",
-            note: "Editable source document · Speculative Lorentz-scalar extension of relativistic causal kinematics",
-            type: "DOCX",
-            details: "Source",
-            file: "Cyclic_Causal_State_Hypothesis_Final.docx",
-            tags: [
-                "CCSH",
-                "cyclic causal state",
-                "special relativity",
-                "causal structure",
-                "Lorentz scalar",
-                "Minkowski spacetime",
-                "timelike",
-                "spacelike",
-                "null boundary",
-                "four-momentum",
-                "modified dispersion",
-                "scalar field",
-                "causality",
-                "speculative physics",
-            ],
-        },
+
     ];
 
     // ==================================================
