@@ -264,7 +264,29 @@ document.addEventListener("DOMContentLoaded", () => {
                 "speculative physics",
             ],
         },
-
+        {
+            project: "CDS",
+            title: "From Circumference-to-Area Ratios to Dimensional Scaling",
+            note: "A geometric path from circles and boundary-to-content ratios to n-balls, high-dimensional geometry, scaling laws, and fractal dimension",
+            type: "PDF",
+            details: "7 pages · Mathematical research-style exposition",
+            file: "From_Circumference_to_Fractal_Dimension.pdf",
+            tags: [
+                "CDS",
+                "circumference-to-area ratio",
+                "dimensional scaling",
+                "circle geometry",
+                "boundary-to-volume ratio",
+                "n-ball",
+                "high-dimensional geometry",
+                "scaling dimension",
+                "isoperimetric geometry",
+                "Koch curve",
+                "Sierpinski triangle",
+                "fractal dimension",
+                "mathematics",
+            ],
+        },
 
     ];
 
